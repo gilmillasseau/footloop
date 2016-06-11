@@ -8,6 +8,8 @@ export default {
 
   sourceDir: './app/',
   buildDir: './build/',
+  bowerStylesDir: './bower_components/**/*min.css',
+  bowerJsDir: './bower_components/**/*min.js',
 
   styles: {
     src: 'app/styles/**/*.scss',
@@ -33,6 +35,11 @@ export default {
     dest: 'build/fonts'
   },
 
+  i18n: {
+    src: ['app/i18n/**/*'],
+    dest: 'build/i18n'
+  },
+
   assetExtensions: [
     'js',
     'css',
@@ -44,7 +51,8 @@ export default {
     'otf',
     'ttc',
     'ttf',
-    'woff2?'
+    'woff2?',
+    'json'
   ],
 
   views: {
@@ -60,7 +68,7 @@ export default {
   },
 
   browserify: {
-    bundleName: 'main.js',
+    bundleName: 'app.js',
     prodSourcemap: false
   },
 

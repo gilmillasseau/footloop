@@ -1,0 +1,37 @@
+body {
+  font-family: $font-family;
+  font-size: 14px;
+}
+
+a {
+  color: $links-color;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: darken($links-color, 25%);
+  }
+}
+
+h1, h2, h3{
+  margin: 0;
+}
+
+.section > * {
+  width: $grid-size;
+  margin: 0 auto;
+}
+
+.container{
+  padding: 0 4rem;
+}
+
+.bg-light{
+  background-color: $background--light;
+}
+
+.bg-dark{
+  background-color: $background--dark;
+}
+

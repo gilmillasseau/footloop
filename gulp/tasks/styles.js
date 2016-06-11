@@ -9,7 +9,7 @@ import handleErrors from '../util/handleErrors';
 import browserSync  from 'browser-sync';
 import autoprefixer from 'gulp-autoprefixer';
 
-gulp.task('styles', function () {
+gulp.task('styles', ['vendor'], function () {
 
   const createSourcemap = !global.isProd || config.styles.prodSourcemap;
 

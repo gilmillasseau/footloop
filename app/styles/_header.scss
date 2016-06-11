@@ -1,0 +1,52 @@
+$nav-height: 200px;
+
+.navbar {
+  width: $grid-size;
+  height: $nav-height;
+  color: white;
+
+  nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+
+    ul {
+      display: inline-block;
+      float: right;
+      line-height: $nav-height;
+      margin: 0;
+    }
+
+    ul > li{
+      display: inline-block;
+      margin: 0 40px 0 0;
+      letter-spacing: 4px;
+
+      &:last-child{
+        margin-right: 56px;
+      }
+
+      a:not('button'){
+        font-size: 16px;
+        color: $links-color;
+      }
+    }
+  }
+
+  .btn{
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 56px;
+    width: 184px;
+  }
+
+}
+
+.navbar .logo {
+  line-height: $nav-height;
+  vertical-align: middle;
+  background-image: url("../images/gulp.png");
+}

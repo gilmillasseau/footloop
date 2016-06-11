@@ -1,0 +1,12 @@
+footer{
+  display: flex;
+  justify-content: center;
+  height: 160px;
+
+  span{
+    font-family: $font-gotham;
+    font-size: 21px;
+    color: #676767;
+    line-height: 160px;
+  }
+}
