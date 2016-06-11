@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "vendor.css",
+  "sources": [
+    "bower_components/spectre.css/dist/spectre.min.css"
+  ],
+  "names": [],
+  "mappings": "AAAA"
+}

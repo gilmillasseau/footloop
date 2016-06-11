@@ -1,0 +1,76 @@
+<!doctype html>
+<html ng-app="app" class="no-js">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title ng-bind="pageTitle"></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="./css/vendor.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="./js/vendor.js"></script>
+</head>
+<body ng-controller="mainController">
+
+<section class="section">
+    <header class="navbar">
+        <nav class="navbar-section">
+            <a class="logo" href="" ng-bind=" 'app.name' | translate"></a>
+            <ul>
+                <li><a href="#" ng-bind=" 'navbar.about' | translate "></a></li>
+                <li><a href="#" ng-bind=" 'navbar.contact' | translate "></a></li>
+                <li>
+                    <button href="#" class="btn" ng-bind="'navbar.download' | translate "></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</section>
+
+<section class="section bg-dark">
+    <section class="section-top">
+        <p ng-bind=" 'section.main.description' | translate "></p>
+        <div>
+            <img src="images/btn-applestore.png">
+            <img src="images/btn-playstore.png">
+        </div>
+        <img class="section-sticky" src="images/demo-iphone-mockuo.png" />
+    </section>
+</section>
+
+<section class="section bg-light">
+    <section class="section-middle">
+        <div class="box box-green">
+            <p class="title" ng-bind=" 'section.main.about.title' | translate "></p>
+            <p class="body" ng-bind=" 'section.main.about.description1' | translate "></p>
+            <p class="body" ng-bind=" 'section.main.about.description2' | translate "></p>
+            <p class="body" ng-bind=" 'section.main.about.description3' | translate "></p>
+        </div>
+        <h3 ng-bind=" 'section.main.share' | translate"></h3>
+
+        <div class="centered">
+            <span class="inline-line"></span>
+            <h4>or</h4>
+            <span class="inline-line"></span>
+        </div>
+        <div class="columns">
+            <button href="#" class="btn btn-primary centered" ng-bind="'section.main.contactUs' | translate "></button>
+        </div>
+        <h5 ng-bind="'section.main.contactUs.legend' | translate"></h5>
+    </section>
+</section>
+
+<section class="section">
+    <footer>
+        <!--<img src="images/gulp.png">-->
+        <span>Credits</span>
+        <!--<img src="images/gulp.png">-->
+    </footer>
+</section>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
