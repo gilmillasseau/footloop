@@ -52,6 +52,7 @@ export default {
     'ttc',
     'ttf',
     'woff2?',
+    'woff',
     'json'
   ],
 

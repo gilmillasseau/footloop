@@ -1,12 +1,74 @@
 footer{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-self: center;
   height: 160px;
+  align-items: center;
 
-  span{
+  .credits{
     font-family: $font-gotham;
-    font-size: 21px;
+    font-size: 16px;
     color: #676767;
-    line-height: 160px;
+
+    span{
+      color: lighten(#676767, 20%);
+    }
+
+    .centered{
+      display: inline;
+    }
+
+    .centered a{
+      text-transform: none;
+      line-height: 18px;
+    }
+  }
+
+  .social-area{
+    .social{
+      cursor: pointer;
+
+      &:hover{
+        opacity: .7;
+      }
+
+      &:first-child{
+        margin-right: 1rem;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: $size-md) {
+
+  footer{
+    display: block;
+  }
+
+  .logo-container{
+    text-align: center;
+    width: 100%;
+    padding-top: 4rem;
+  }
+
+  footer .credits{
+    text-align: center;
+    padding-top: 4rem;
+    width: 100%;
+
+    > span {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .social-area{
+    display: flex;
+    width: 100%;
+    padding-top: 4rem;
+    justify-content: center;
   }
 }

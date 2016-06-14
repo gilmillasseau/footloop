@@ -3,6 +3,19 @@ body {
   font-size: 14px;
 }
 
+a.btn{
+
+  &:focus{
+    color: inherit;
+  }
+
+  &.btn-primary{
+    &:focus{
+      color: white;
+    }
+  }
+}
+
 a {
   color: $links-color;
   text-decoration: none;
@@ -11,6 +24,18 @@ a {
   &:hover,
   &:focus {
     color: darken($links-color, 25%);
+    cursor: pointer;
+  }
+
+  &.btn{
+    &:focus{
+      color: $button-color;
+    }
+
+    &:focus:hover{
+      color: white;
+    }
+
   }
 }
 
@@ -18,9 +43,19 @@ h1, h2, h3{
   margin: 0;
 }
 
+nav {
+  padding: 0;
+}
+
 .section > * {
-  width: $grid-size;
+  max-width: $grid-size;
   margin: 0 auto;
+}
+
+@media screen and (max-width: $size-xl) {
+  .section > * {
+    padding: 0 2rem;
+  }
 }
 
 .container{
@@ -34,4 +69,6 @@ h1, h2, h3{
 .bg-dark{
   background-color: $background--dark;
 }
+
+
 

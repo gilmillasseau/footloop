@@ -35,3 +35,10 @@ $font-size--sm: 12px;
 $font-size--md: 16px;
 $font-size--lg: 24px;
 $font-size--xl: 32px;
+
+// Responsive breakpoints
+$size-xs: 480px;
+$size-sm: 600px;
+$size-md: 840px;
+$size-lg: 960px;
+$size-xl: $grid-size;

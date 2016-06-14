@@ -22,7 +22,22 @@
     margin: 0;
     position: absolute;
     top: 54px;
-    right: 140px;
+    right: 40px;
   }
+
+}
+
+@media screen and (max-width: $size-xl) {
+  .section-sticky {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: $size-xl) {
+
+}
+
+@media screen and (max-width: $size-xl) {
 
 }

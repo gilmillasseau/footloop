@@ -8,7 +8,7 @@
     font-size: 28px;
     color: #6166db;
     letter-spacing: 1.4px;
-    line-height: 18px;
+    line-height: 1;
     text-align: center;
     margin-bottom: 55px;
   }
@@ -16,9 +16,10 @@
   .centered {
     width: 50%;
     margin-bottom: 55px;
+    text-align: center;
 
     .inline-line {
-      width: 41%;
+      width: 38%;
       height: 1px;
       background: #bcbcbc;
       opacity: .5;
@@ -27,7 +28,7 @@
 
     h4 {
       font-family: $font-gotham-medium;
-      margin: 0 34px;
+      margin: 0 5%;
       font-size: 19px;
       color: #010101;
       line-height: 18px;
@@ -55,19 +56,21 @@
   }
 
   .btn-primary {
-    width: 49%;
+    max-width: 560px;
     height: 8rem;
     margin-bottom: 30px;
     font-size: 28px;
     background-color: #4ce4bb;
     border-radius: 10px;
+    line-height: 64px;
   }
 
   .box {
     max-width: 581px;
     min-height: 412px;
-    padding: 4rem;
+    padding: 4rem 4rem 8rem 4rem;
     margin-bottom: 132px;
+    position: relative;
 
     &-green {
       background-color: $primary-color;
@@ -85,6 +88,33 @@
       font-size: 20px;
       line-height: 36px;
     }
+
+    .img-absolute{
+      position: absolute;
+      bottom: -16%;
+      left: 60%;
+    }
   }
 
+}
+
+@media screen and (max-width: $size-xl) {
+
+  .section-middle .centered{
+    width: 100%;
+  }
+
+  .section-middle .btn-contact {
+      width: 100%;
+  }
+
+}
+
+@media screen and (max-width: $size-xs) {
+  .section-middle .btn-primary {
+    width: 100%;
+    height: 6rem;
+    font-size: 20px;
+    line-height: 50px;
+  }
 }
